@@ -18,7 +18,8 @@ public class HelloWorldConroller {
 
     @GetMapping(path = "/hello-world/path-variable/{name}")
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-        return new HelloWorldBean(String.format("HelloWorld, %s", name));
+        throw new RuntimeException("12345");
+        //return new HelloWorldBean(String.format("HelloWorld, %s", name));
     }
 
 }
