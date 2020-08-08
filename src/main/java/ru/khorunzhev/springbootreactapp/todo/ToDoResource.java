@@ -19,7 +19,7 @@ public class ToDoResource {
         return toDoService.findAll();
     }
 
-    @DeleteMapping("users/{userName}/todos/{id}")
+    @DeleteMapping("users/{name}/todos/{id}")
     public ResponseEntity<Void> deleteToDo(@PathVariable String name,
                                            @PathVariable long id) {
         Todo deleted = toDoService.delete(id);
