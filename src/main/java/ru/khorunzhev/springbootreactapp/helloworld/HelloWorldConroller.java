@@ -1,4 +1,4 @@
-package ru.khorunzhev.springbootreactapp;
+package ru.khorunzhev.springbootreactapp.helloworld;
 
 import org.springframework.web.bind.annotation.*;
 
