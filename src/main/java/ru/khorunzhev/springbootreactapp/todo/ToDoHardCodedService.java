@@ -34,8 +34,19 @@ public class ToDoHardCodedService {
         return null;
     }
 
-    private Optional<Todo> findById(long id) {
+    public Optional<Todo> findById(long id) {
         return todoList.stream().filter((Todo todo) -> todo.getId().equals(id))
                 .findFirst();
+    }
+
+    public Todo save(Todo todo) {
+        if (todo.getId() == -1) {
+            todo.setId(idCounter++);
+            todoList.add(todo);
+        } else {
+            delete(todo.getId());
+            todoList.add(todo);
+        }
+        return todo;
     }
 }

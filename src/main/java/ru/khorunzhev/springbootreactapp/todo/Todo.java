@@ -1,8 +1,11 @@
 package ru.khorunzhev.springbootreactapp.todo;
 
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 import java.util.Objects;
 
+@NoArgsConstructor
 public class Todo {
 
     private Long id;
