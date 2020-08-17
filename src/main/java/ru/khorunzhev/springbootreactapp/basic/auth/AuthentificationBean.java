@@ -1,10 +1,10 @@
-package ru.khorunzhev.springbootreactapp.helloworld;
+package ru.khorunzhev.springbootreactapp.basic.auth;
 
-public class HelloWorldBean {
+public class AuthentificationBean {
 
     private String message;
 
-    public HelloWorldBean(String message) {
+    public AuthentificationBean(String message) {
         this.message = message;
     }
 
