@@ -2,12 +2,19 @@ package ru.khorunzhev.springbootreactapp.todo;
 
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.Objects;
 
+@Entity
 @NoArgsConstructor
 public class Todo {
 
+    @Id
+    @GeneratedValue
     private Long id;
     private String userName;
     private String description;
