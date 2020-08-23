@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface ConsumptionJpaRepository extends JpaRepository<Consumption, Long> {
     List<Consumption> findByUser(User user);
+    Consumption findByUserAndId(String login, Long id);
     List<Consumption> findByDate(Date date);
     List<Consumption> findByConsumptionCategoryAndDate(
             ConsumtionCategory consumtionCategory,
